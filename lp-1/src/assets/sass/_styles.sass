@@ -1,0 +1,103 @@
+.nr-main-banner
+    background: url('../images/novared-bg.jpg') no-repeat left center
+    background-size: cover
+    min-height: 450px
+
+p
+    font-size: 1.2rem
+    line-height: 1.8rem
+    font-weight: 300
+
+.text-shadow
+    text-shadow: 1px 1px 2px rgba(0,0,0,1)
+
+.text-light-blue
+    color: $light-blue
+
+.text-blue
+    color: $blue
+
+.text-dark-blue
+    color: $dark-blue
+
+.text-blue-secondary
+    color: $blue-secondary
+
+.bg-blue
+    background-color: $blue
+
+.bg-light-blue
+    background-color: $light-blue
+
+.nr-mask
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba($dark-blue,.5)
+
+// label
+//     margin-bottom: 0 !important
+
+// input
+//     background: none !important
+//     color: white !important
+//     border-radius: 0 !important
+//     border: none !important
+//     border-bottom: 1px solid white !important
+//     outline: none !important
+//     box-shadow: none !important
+
+.nr-features-text
+    position: absolute
+    width: 100%
+    top: 310px
+
+@include media-breakpoint-down(xl)
+    .nr-main-banner
+        background: $dark-blue
+    *
+        text-align: center
+
+@include media-breakpoint-up(xl)
+    *
+        text-align: left
+
+@include media-breakpoint-up(lg)
+
+    .nr-solutions
+        margin-top: -90px
+
+    .nr-solutions-title
+        color: white
+
+    .nr-features
+        margin-top: 0px
+
+    .nr-features-text
+        position: absolute
+        width: 100%
+        top: 210px
+
+@include media-breakpoint-up(xl)
+    .nr-features
+        margin-top: -200px
+
+    .nr-features-text
+        position: absolute
+        width: 100%
+        top: 280px
+
+@include media-breakpoint-up(xxl)
+    .nr-features
+        margin-top: -280px
+
+    .nr-features-text
+        position: absolute
+        width: 100%
+        top: 320px
+
+@media all and (min-width: 1700px)
+    .nr-banner-offset-control
+        margin-left: 10rem

@@ -1,0 +1,139 @@
+.nr-main-banner
+    background: url('../images/novared-bg.jpg') no-repeat left center
+    background-size: cover
+    min-height: 450px
+
+p
+    font-size: 1.2rem
+    line-height: 1.8rem
+    font-weight: 300
+
+.text-shadow
+    text-shadow: 1px 1px 2px rgba(0,0,0,1)
+
+.text-light-blue
+    color: $light-blue
+
+.text-blue
+    color: $blue
+
+.text-dark-blue
+    color: $dark-blue
+
+.text-blue-secondary
+    color: $blue-secondary
+
+.bg-blue
+    background-color: $blue
+
+.bg-light-blue
+    background-color: $light-blue
+
+.nr-mask
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba($dark-blue,.5)
+
+@media all and (max-width: 450px)
+    .nr-structure
+        display: none !important
+
+@media all and (max-width: 450px)
+    .nr-structure
+        position: absolute
+        width: 100%
+        left: 0
+        top: 40% !important
+        transform: translateY(-20%)
+
+@include media-breakpoint-down(xl)
+    *
+        text-align: center
+
+    .nr-container-structure
+        margin-top: 0
+
+    .nr-structure
+        position: absolute
+        width: 100%
+        left: 0
+        top: 50%
+        transform: translateY(-20%)
+
+@include media-breakpoint-up(sm)
+    .nr-container-structure
+        margin-top: 0
+
+    .nr-structure
+        position: absolute
+        width: 100%
+        left: 0
+        top: 50%
+        transform: translateY(-20%)
+
+@include media-breakpoint-up(md)
+
+    .nr-container-structure
+        margin-top: 0
+
+    .nr-structure
+        position: absolute
+        width: 100%
+        left: 0
+        top: 45%
+
+@include media-breakpoint-up(lg)
+
+    .nr-container-structure
+        margin-top: 0
+
+    .nr-structure
+        position: absolute
+        width: 100%
+        left: 0
+        top: 50%
+        transform: translateY(-20%)
+
+@include media-breakpoint-up(xl)
+    *
+        text-align: left
+
+    .nr-container-structure
+        margin-top: -80px
+
+    .nr-structure
+        position: absolute
+        width: 100%
+        left: 0
+        top: 40%
+        // transform: translateY(-20%)
+
+@include media-breakpoint-up(xxl)
+
+    .nr-container-structure
+        margin-top: -70px
+
+    .nr-structure
+        position: absolute
+        width: 100%
+        left: 0
+        top: 50%
+        transform: translateY(-35%)
+
+@media all and (min-width: 1600px)
+    .nr-container-structure
+        margin-top: -80px
+
+    .nr-structure
+        position: absolute
+        width: 100%
+        left: 0
+        top: 40%
+        transform: translateY(-20%)
+
+@media all and (min-width: 1700px)
+    .nr-banner-offset-control
+        margin-left: 10rem
